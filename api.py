@@ -23,7 +23,7 @@ def select():
 def breast_cancer():
     feat = request.form.to_dict()
     feat = list(feat.values())
-    model = load('E:\Ashu\My Codes\Tutorials\Machine Learning\Projects ML\Health_App\Models\BreastCancer_Model.joblib')
+    model = load('Models\BreastCancer_Model.joblib')
     result = model.predict([feat])
     if result == 0:
         diagnosis = 'No Breast cancer detected'
@@ -36,7 +36,7 @@ def breast_cancer():
 def diabetes():
     feat = request.form.to_dict()
     feat = list(feat.values())
-    model = load('E:\Ashu\My Codes\Tutorials\Machine Learning\Projects ML\Health_App\Models\Diabetes_Model.joblib')
+    model = load('Models\Diabetes_Model.joblib')
     result = model.predict([feat])
     if result == 0:
         diagnosis = 'No Diabetes detected'
@@ -49,7 +49,7 @@ def diabetes():
 def liver():
     feat = request.form.to_dict()
     feat = list(feat.values())
-    model = load('E:\Ashu\My Codes\Tutorials\Machine Learning\Projects ML\Health_App\Models\Liver_Model.joblib')
+    model = load('Models\Liver_Model.joblib')
     result = model.predict([feat])
     if result == 1:
         diagnosis = 'No Liver disease detected'
