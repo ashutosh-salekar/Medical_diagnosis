@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:slategray;
+            text-align: center;
+        }
+        input{
+            height: 20px;
+            border: none;
+            border-radius: 10px;
+        }
+        #submit{
+            background-color:palevioletred;
+            width: 100px;
+        }
+
+        #submit:hover{
+            background-color: mediumvioletred;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Liver</h1>
+
+    <form action="liver_data" method="POST"> 
+       
+        Age<br> 
+        <input type="text" name="age"><br><br>
+        Gender<br> 
+        <input type="text" name="gender"><br><br>
+        Total Bilirubin<br>
+        <input type="text" name="total_bilirubin"><br><br>
+        Alkaline Phosphotase<br> 
+        <input type="text" name="alkaline_phosphotase"><br><br>
+        Alamine Aminotransferase<br> 
+        <input type="text" name="alamine_aminotransferase"><br><br>
+        Total Protiens<br> 
+        <input type="text" name="total_protiens"><br><br>
+        Albumin and Globulin Ratio<br>
+        <input type="text" name="albumin_and_globulin_ratio"><br><br>
+
+        <input type="submit" value="Submit" id="submit"><br><br><br>
+
+    </form>
+</body>
+</html>

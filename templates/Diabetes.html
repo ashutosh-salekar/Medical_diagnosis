@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:slategray;
+            text-align: center;
+        }
+        input{
+            height: 20px;
+            border: none;
+            border-radius: 10px;
+        }
+        #submit{
+            background-color:palevioletred;
+            width: 100px;
+        }
+
+        #submit:hover{
+            background-color: mediumvioletred;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Diabetes</h1>
+
+    <form action="/diabetes_data" method="POST"> 
+       
+        Pregnancies<br> 
+        <input type="text" name="pregnancies"><br><br>
+        Glucose<br> 
+        <input type="text" name="glucose"><br><br>
+        BloodPressure<br>
+        <input type="text" name="bloodPressure"><br><br>
+        SkinThickness<br> 
+        <input type="text" name="skinThickness"><br><br>
+        Insulin<br> 
+        <input type="text" name="insulin"><br><br>
+        BMI<br> 
+        <input type="text" name="bmi"><br><br>
+        DiabetesPedigreeFunction<br>
+        <input type="text" name="pedigreee"><br><br>
+        Age<br>
+        <input type="text" name="Age"><br><br>
+
+        <input type="submit" value="Submit" id="submit"><br><br><br>
+
+    </form>
+</body>
+</html>

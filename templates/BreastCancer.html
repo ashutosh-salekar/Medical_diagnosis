@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:slategray;
+            text-align: center;
+        }
+        input{
+            height: 20px;
+            border: none;
+            border-radius: 10px;
+        }
+        #submit{
+            background-color:palevioletred;
+            width: 100px;
+        }
+
+        #submit:hover{
+            background-color: mediumvioletred;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Breast Cancer</h1>
+
+    <form action="breastcancer_data" method="POST"> 
+       
+        Radius Mean<br> 
+        <input type="text" name="radius_mean"><br><br>
+        
+        Texture Mean<br> 
+        <input type="text" name="texture_mean"><br><br>
+        
+        Smoothness Mean<br>
+        <input type="text" name="smoothness_mean"><br><br>
+        
+        Compactness Mean<br> 
+        <input type="text" name="compactness_mean"><br><br>
+        
+        Symmetry Mean<br> 
+        <input type="text" name="symmetry_mean"><br><br>
+        
+        Fractal Dimension Mean<br> 
+        <input type="text" name="fractal_dimension_mean"><br><br>
+        
+        Texture Se<br>
+        <input type="text" name="texture_se"><br><br>
+
+        Smoothness Se<br>
+        <input type="text" name="smoothness_se"><br><br>
+
+        Symmetry Se<br>
+        <input type="text" name="symmetry_se"><br><br>
+
+        Symmetry Worst<br>
+        <input type="text" name="symmetry_worst"><br><br>
+
+        <input type="submit" value="Submit" id="submit"><br><br><br>
+
+    </form>
+</body>
+</html>

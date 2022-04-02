@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: skyblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <h2>Online Medical Assistance</h2>
+    <h3>Select the disease to diagnosis.</h3>
+    
+    <form action="/Select_disease" method="POST">
+        <input type="radio" id="breastcancer" name="Disease" value="breastcancer">
+        <label for="breastcancer">Breast Cancer</label><br>
+
+        <input type="radio" id="diabetes" name="Disease" value="diabetes">
+        <label for="diabetes">Diabetese</label><br>
+
+        <input type="radio" id="liver" name="Disease" value="liver">
+        <label for="liver">Liver Disease</label><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
